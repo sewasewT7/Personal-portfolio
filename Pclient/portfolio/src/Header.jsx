@@ -61,7 +61,7 @@ const Header = () => {
         {/* Theme Toggle Button */}
         <div className="theme-toggle">
           <button onClick={toggleTheme} aria-label="Toggle Theme">
-            {darkMode ? "🌞 Day Mode" : "🌙 Night Mode"}
+            {darkMode ? "🌞 Day Mod" : "🌙 Night Mode"}
           </button>
         </div>
       </div>
