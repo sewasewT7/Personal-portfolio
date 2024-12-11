@@ -4,6 +4,11 @@ import "./Header.css";
 
 const Header = () => {
   // Manage dark mode state with initial value from localStorage
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuBar = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
   const [darkMode, setDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem("darkMode");
     return savedTheme === "true";
@@ -38,7 +43,8 @@ const Header = () => {
         </div>
 
         {/* Navigation Links */}
-        <nav className="nav-links">
+
+        <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
           <ul>
             <li>
               <Link to="/home">
@@ -70,6 +76,7 @@ const Header = () => {
             {darkMode ? "🌞" : "🌙"}
           </button>
         </div>
+        <span className="fa fa-bars" onClick={menuBar}></span>
       </div>
     </header>
   );
