@@ -41,19 +41,25 @@ const Header = () => {
         <nav className="nav-links">
           <ul>
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/home">
+                <i className="fa-solid fa-house icon"></i> Home
+              </Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <i className="fa-solid fa-user"> </i>
+              <Link to="/about"> About</Link>
             </li>
             <li>
-              <Link to="/skills">Skills</Link>
+              <i className="fa-solid fa-gear"></i>
+              <Link to="/skills"> Skills</Link>
             </li>
             <li>
-              <Link to="/works">Work</Link>
+              <i className="fa-solid fa-list-check"></i>
+              <Link to="/works"> Work</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <i className="fa-solid fa-address-book"></i>
+              <Link to="/contact"> Contact</Link>
             </li>
           </ul>
         </nav>
@@ -61,7 +67,7 @@ const Header = () => {
         {/* Theme Toggle Button */}
         <div className="theme-toggle">
           <button onClick={toggleTheme} aria-label="Toggle Theme">
-            {darkMode ? "🌞 Day Mod" : "🌙 Night Mode"}
+            {darkMode ? "🌞" : "🌙"}
           </button>
         </div>
       </div>
