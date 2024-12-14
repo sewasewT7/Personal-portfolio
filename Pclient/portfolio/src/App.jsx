@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Hom from "./Hom.jsx";
 import Header from "./Header.jsx";
+import About from "./About.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Hom />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
     </Router>

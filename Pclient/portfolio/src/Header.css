@@ -8,7 +8,7 @@ body {
 }
 
 body.dark-mode {
-  background-color: #121212;
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -19,7 +19,8 @@ body.light-mode {
 
 /* Header Styles */
 .header {
-  position: fixed;
+  position:fixed;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +44,7 @@ body.dark-mode .header {
   width: 80%;
   max-width: 1200px;
   margin: 20px auto;
-  position: sticky;
+  position: relative;
 }
 
 /* Logo */
@@ -121,9 +122,9 @@ body.light-mode .nav-links ul li a::after {
   background-color: rgba(184, 234, 246, 0.615);
   color: #fff;
 }
-header .header-content span{
+/* header .header-content span{
   display: none;
-}
+} */
 
 /* Responsive Design */
 @media only screen and (max-width: 860px) {
