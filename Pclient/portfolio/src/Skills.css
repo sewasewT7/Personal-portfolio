@@ -1,0 +1,159 @@
+/* General Styling */
+#skill {
+  padding: 40px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  animation: fadeInPage 1s ease-in-out;
+}
+
+.container-s {
+  margin: auto;
+  padding: 20px;
+
+}
+
+.skill-h1{
+  font-size: 3em;
+  font-weight: bold;
+  color:rgb(21, 199, 239);
+  margin-bottom: 150px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  animation: slideDown 1.2s ease-out forwards;
+  opacity: 0;
+}
+.skill-h1 h2{
+  text-align: left;
+  font-size: 60px;
+  margin-left: 25px;
+}
+
+.skill-image {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Image Styles */
+.skill-image img {
+  width: 200px;
+  height: 180px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9;
+  animation: popIn 1s ease-out forwards;
+  transform-origin: center;
+  margin-bottom: 200px;
+}
+
+/* Hover Effect with "Dance" Animation */
+.skill-image img:hover {
+  animation: dance 0.5s ease-in-out infinite alternate;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+h3 {
+  font-size: 2.5em;
+  color:rgb(21, 199, 239) ;
+  margin-bottom: 40px;
+}
+
+/* Progress bar styling */
+.skill {
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 1.5em;
+  color: rgb(21, 199, 239);
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.col {
+  flex: 10;
+  margin: 10px;
+  width: 50%;
+}
+
+.progress {
+  height: 15px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  width: 100%;
+  height: 20px;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(38, 32, 60);
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  transition: width 1s ease-in-out; /* Smooth animation */
+}
+/* Keyframes for Page and Image Animations */
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Dance animation keyframes */
+@keyframes dance {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(0) rotate(5deg);
+  }
+  75% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+/* Responsive Design */
+
