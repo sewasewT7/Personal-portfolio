@@ -1,0 +1,211 @@
+#contact{
+  position: relative;
+
+}
+
+.contact-h{
+  text-align: center;
+  margin-top: 120px;
+  font-size: 25px;
+  color:rgb(149, 195, 251);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9;
+  animation: popIn 1s ease-out forwards;
+  transform-origin: center;
+  
+}
+
+
+.fa-face-smile-beam {
+ color: rgb(255, 222, 6);
+ margin-left: 5px;
+ font-size: 30px;
+}
+
+
+.fa-face-smile-beam:hover{
+  color:rgb(244, 190, 11);
+  transform: translateY(-5px);
+}
+
+
+.contact-h h1{
+  color:rgb(100, 214, 237);
+  margin-bottom: 20px;
+  margin-top: 100px;
+
+}
+.contact-h h2{
+  font-family: 'Robonto-light' sans-serif ;
+  margin-bottom: 50px;
+  color:white(65, 161, 221);
+}
+.social-media{
+  margin-top: 60px;
+  margin-left: 210px;
+}
+.social-media a{  
+  font-size: 20px;
+  color:black;
+  padding:10px 10px;
+  background-color:rgb(65, 161, 221);
+  border-radius:100%;
+  margin-right: 20px;
+  transition:  transform 0.5s;
+}
+.social-media a:hover{
+  background-color:rgba(65, 161, 221, 0.793);}
+
+.contact-left {
+    flex-basis: 30%;
+    margin-left: -20px;
+    margin-right: 10px;
+    }
+.container213 {
+  width: 60%;
+  position: relative; /* Enables positioning for the pseudo-element */
+  position:sticky;
+  padding: 20px;
+  background: #000; /* Black background for contrast */
+  display: inline-block;
+  margin-left: 300px;
+
+  border: outset;
+  border-width: 2px;
+  border-color: rgb(0, 221, 255); 
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  background-size: 200% 100%;
+  animation: neon-flow 4s linear infinite;
+  z-index: 1; /* Ensures the content is on top */
+    }
+  
+
+.container213::before,
+.container213::after{
+  content: "";
+  position: absolute;
+  height: 4px; 
+  width: 100%; 
+  background: linear-gradient(90deg, rgba(81, 81, 242, 0.333),aqua, rgb(8, 0, 255));
+  background-size: 200% 100%;
+  animation: neon-flow 4s linear infinite;
+  filter: blur(4px);
+}
+
+
+.container213::before {
+  top: 0; 
+  left: 0;
+
+}
+
+.container213::after {
+  bottom: 0; 
+  left: 0;
+
+}
+ 
+
+@keyframes neon-flow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}  
+
+
+.contact-right {
+  flex-basis: 100%;
+  margin-left: 30px;
+}
+
+.contact-left p {
+  margin-top: 30px;
+  margin-left: 80px;
+  padding-left: 100px;
+}
+.contact-left p a{
+  color: #ffffffc0;
+  margin-left: 30px;
+  
+}
+
+.contact-left p i{
+  color:rgb(65, 161, 221);
+  font-size:20px;
+  margin-right: 20px;
+  transition: transform 0.5s;
+}
+/* .contact-left .fa-paper-plane{
+ top: 50%;
+} */
+.contact-left p i:hover{
+  color: rgb(65, 161, 221);
+  transform: translateY(-5px);
+}
+.contact-right form {
+  width: 70%;
+}
+
+
+/* Wrapper for input and icon */
+/* Wrapper for input and icon */
+.input-wrapper {
+  position: relative;
+  margin: 15px 0;
+}
+
+/* Styling for icons inside inputs */
+.input-wrapper i {
+  position: absolute;
+  top: 50%; /* Vertically centers the icon */
+  left: 15px; /* Space between icon and input edge */
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.input-wrapper  .fa-message{
+  position: absolute;
+  top:18%;
+  
+
+}
+.input-wrapper i:hover {
+  color: rgb(240, 244, 11); /* Matches your hover effect */
+  transform: translateY(-5px); /* Adds hover animation */
+}
+
+/* Adjust input and textarea to accommodate icons */
+.input-wrapper input,
+.input-wrapper textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #333333e2;
+  padding: 15px 15px 15px 50px; /* Adds space for the icon */
+  color: #a29a9a;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.input-wrapper input:focus,
+.input-wrapper textarea:focus {
+  border: 1px solid rgb(65, 161, 221); /* Optional focus effect */
+  outline: none;
+}
+
+form .btn-2 {
+  padding: 8px 25px;
+  font-size: 18px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+form .btn-2:hover{
+  background-color:rgb(65, 161, 221);
+  color:black;
+}
